@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background-color: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+}
+.navbar .navbar-brand span{
+    color: rgb(250, 217, 31) !important;
+}
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid rgb(250, 217, 31);
+}
+#navbarSupportedContent button{
+    background: rgb(250, 217, 31);
+    border-radius: 15px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;justify-content: center;align-items: center;
+}
+#home{
+    background-image:linear-gradient(rgba(0,0,1,.3),black), url("images/bg.png");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+
+}
+#home h1{
+    font-size: 75px;
+    color: white;
+    letter-spacing: 3px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+}
+#home p{
+    font-size: 18px;
+    color: white;
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background:rgb(151, 151, 151) !important ;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+}
+.img-fluid img{
+    margin-left: 100px;
+}
+#about{
+    background: white;
+}
+#about h1{
+    font-weight: 300;
+    font-size: 50px;
+}
+
+/***Products***/
+
+#product{
+    background: linear-gradient(to right,rgb(253, 242, 249) ,rgb(250, 217, 31) 100%);
+}
+#product h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+#product img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 250px;
+    height: 330px;
+    background:#e0dada ;
+    border: none !important;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3),
+                inset 4px 4px 10px rgb(235, 235, 235);
+    border-radius: 10px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+    transition: .5s;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.2),
+                inset -4px -4px 10px rgb(235, 235, 235);
+    transition: .5s;            
+}
+.card .btn{
+    background-color: rgb(250, 217, 31) !important;
+}
+
+
+
+#contact img{
+    width: 450px;
+    height: 250px;
+}
+.box{
+    width: 80% !important;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+#contact button{
+    margin: 10px 0px;
+    background-color: rgb(250, 217, 31);
+}
+footer{
+    background-color: black;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 40px;
+}
